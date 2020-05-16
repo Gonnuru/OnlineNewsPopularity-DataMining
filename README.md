@@ -87,10 +87,10 @@ So, we have to choose a threshold and we choose 1400 shares as the threshold and
 As **Max: 843,300, Mean: 3,395.380, Deviation: 11,626.951 Median shares: 1,400 shares,** there is a lot of deviation and choose median as it does not affect outliers.
 Since, the data is highly skewed, we are using Log Transformation to make data less skewed. This can be valuable both for making patterns in the data more interpretable and for helping to meet the assumptions of inferential statistics.
 Before Log transformation:
-![LogTransformationPic]()
+![LogTransformationPic](https://github.com/Gonnuru/OnlineNewsPopularity-DataMining/blob/master/Images/beforelog.jpg)
 
 After Log Transformation and converting the shares variable into two categories
-![AfterLogTransformation]()
+![AfterLogTransformation](https://github.com/Gonnuru/OnlineNewsPopularity-DataMining/blob/master/Images/afterlog.jpg)
 
 We used **Recursive Feature Elimination (RFE)**
 Recursive Feature Elimination or RFE uses a model (e.g. linear Regression or SVM) to select either the best or worst-performing feature, and then excludes that feature. The whole process is then iterated until all features in the dataset are used up (or up to a user-defined limit). Sklearn conveniently possesses a RFE function via the sklearn feature selection call and we use this along with a simple linear regression model and logistic regression model for ranking the features and to decide on the attribute for the model building.
@@ -99,23 +99,26 @@ Recursive Feature Elimination or RFE uses a model (e.g. linear Regression or SVM
 We Implemented Three Classification models. Decision Trees, Support Vector Machines and K Nearest Neighbors (KNN)
 1)	**Decision Trees:**
 A decision tree is a guide of the conceivable results of a progression of related choices. Decision tree is one of the most used techniques in data mining because of its simplicity to explain the results. Besides, there are decision tree algorithms that work with parallel and incremental techniques, which help to process large databases for classifying new objects faster than traditional algorithms. A decision tree ordinarily begins with a single node, which branches into conceivable results.
-![Decision Tree]()
+![Decision Tree](https://github.com/Gonnuru/OnlineNewsPopularity-DataMining/blob/master/Images/decision.jpg)
 ***ROC Curve for Decision Trees***
 
 2)	**Support Vector Machines (SVM):**
 A Support Vector Machine (SVM) is a discriminative classifier formally defined by a separating hyperplane. In other words, given labelled training data (supervised learning), the algorithm outputs an optimal hyperplane which categorizes new examples. In two-dimensional space this hyperplane is a line dividing a plane in two parts where in each class lay in either side.
-![SVM]()
+![SVM](https://github.com/Gonnuru/OnlineNewsPopularity-DataMining/blob/master/Images/SVM.jpg)
 ***ROC Curve For SVM***
 
 3)	**K Nearest Neighbors (KNN):**
 K-Nearest Neighbors is one of the most basic yet essential classification algorithms in Machine Learning. It belongs to the supervised learning domain and finds intense application in pattern recognition, data mining and intrusion detection. In pattern recognition, the k-nearest neighbors’ algorithm (k-NN) is a non-parametric method used for classification and regression. In both cases, the input consists of the k closest training examples in the feature space. The output depends on whether k-NN is used for classification or regression: In k-NN classification, the output is a class membership. An object is classified by a majority vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors (k is a positive integer, typically small). If k = 1, then the object is simply assigned to the class of that single nearest neighbor.
-![Knearest]()
+![Knearest](https://github.com/Gonnuru/OnlineNewsPopularity-DataMining/blob/master/Images/KNN.jpg)
 ***ROC Curve For KNN***
 
 ### Results 
-
+![Results](https://github.com/Gonnuru/OnlineNewsPopularity-DataMining/blob/master/Images/results.jpg)
 ### Tableau Insights
-
+![1](https://github.com/Gonnuru/OnlineNewsPopularity-DataMining/blob/master/Images/tableau1.jpg)
+![2](https://github.com/Gonnuru/OnlineNewsPopularity-DataMining/blob/master/Images/tableau2.jpg)
+![3](https://github.com/Gonnuru/OnlineNewsPopularity-DataMining/blob/master/Images/tableau3.jpg)
+![4](https://github.com/Gonnuru/OnlineNewsPopularity-DataMining/blob/master/Images/tableau4.jpg)
 ### Conclusion
 With the aim to predict the popularity of a news on the various factors we build models based on three different supervised classification techniques
 - Decision Tree
@@ -131,7 +134,6 @@ From the available **61 attributes we identified 21 based on domain knowledge an
 
 ### Output
 The SVM model that we have built gives **68% accuracy** on the testing data. Thus, we have built a model that can predict if the News will become popular based on the given features of the news.
-##
 
 
 
