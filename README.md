@@ -101,18 +101,21 @@ We Implemented Three Classification models. Decision Trees, Support Vector Machi
 A decision tree is a guide of the conceivable results of a progression of related choices. Decision tree is one of the most used techniques in data mining because of its simplicity to explain the results. Besides, there are decision tree algorithms that work with parallel and incremental techniques, which help to process large databases for classifying new objects faster than traditional algorithms. A decision tree ordinarily begins with a single node, which branches into conceivable results.
 
 ![Decision Tree](https://github.com/Gonnuru/OnlineNewsPopularity-DataMining/blob/master/Images/decision.jpg)
+
 ***ROC Curve for Decision Trees***
 
 2)	**Support Vector Machines (SVM):**
 A Support Vector Machine (SVM) is a discriminative classifier formally defined by a separating hyperplane. In other words, given labelled training data (supervised learning), the algorithm outputs an optimal hyperplane which categorizes new examples. In two-dimensional space this hyperplane is a line dividing a plane in two parts where in each class lay in either side.
 
 ![SVM](https://github.com/Gonnuru/OnlineNewsPopularity-DataMining/blob/master/Images/SVM.jpg)
+
 ***ROC Curve For SVM***
 
 3)	**K Nearest Neighbors (KNN):**
 K-Nearest Neighbors is one of the most basic yet essential classification algorithms in Machine Learning. It belongs to the supervised learning domain and finds intense application in pattern recognition, data mining and intrusion detection. In pattern recognition, the k-nearest neighbors’ algorithm (k-NN) is a non-parametric method used for classification and regression. In both cases, the input consists of the k closest training examples in the feature space. The output depends on whether k-NN is used for classification or regression: In k-NN classification, the output is a class membership. An object is classified by a majority vote of its neighbors, with the object being assigned to the class most common among its k nearest neighbors (k is a positive integer, typically small). If k = 1, then the object is simply assigned to the class of that single nearest neighbor.
 
 ![Knearest](https://github.com/Gonnuru/OnlineNewsPopularity-DataMining/blob/master/Images/KNN.jpg)
+
 ***ROC Curve For KNN***
 
 ### Results 
